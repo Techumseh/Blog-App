@@ -1,4 +1,4 @@
-const db = require('../db/connections') // importing connection
+const db = require('../db/connection') // importing connection
 const Post = require('../models/postModels') // importing post schema
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -40,7 +40,7 @@ const main = async () => {
       }
     ]
   
-  await Post.insterMany(posts);
+  await Post.insertMany(posts);
   console.log("Created posts!");
 }
 
