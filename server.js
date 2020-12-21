@@ -12,6 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(logger('dev'))
 
+// appends /api before each route - http://localhost:3000/api/posts
 app.use('/api', postsRoutes);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
