@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+.nav-links p {
+  padding: 10px;
+}
+
+.nav-container h1 {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
