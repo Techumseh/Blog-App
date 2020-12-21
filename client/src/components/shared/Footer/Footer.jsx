@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
-        <p>Daysired De Jesus, Jeff Bond, Zac Olds</p>
+        <p> &#169; Daysired De Jesus, Jeff Bond, Zac Olds</p>
       </div>
     </footer>
   );
