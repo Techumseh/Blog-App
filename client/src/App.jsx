@@ -1,11 +1,11 @@
-import React from 'react'
-import './App.css';
-import Home from './screens/Home/Home'
-import Posts from './screens/Posts/Posts'
-import PostCreate from './screens/PostCreate/PostCreate'
-import PostDetail from './screens/PostDetail/PostDetail'
-import PostEdit from './screens/PostEdit/PostEdit'
-import { Route, Switch } from 'react-router-dom'
+import React from "react";
+import "./App.css";
+import Home from "./screens/Home/Home";
+import Posts from "./screens/Posts/Posts";
+import PostCreate from "./screens/PostCreate/PostCreate";
+import PostDetail from "./screens/PostDetail/PostDetail";
+import PostEdit from "./screens/PostEdit/PostEdit";
+import {Route, Switch} from "react-router-dom";
 
 const App = () => {
   return (
@@ -19,6 +19,6 @@ const App = () => {
       </Switch>
     </div>
   );
-}
+};
 
 export default App;
