@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 // import './Footer.css'
 
-const Footer = () =>
-  <footer></footer>
+const Footer = () => {
+  return <footer>Daysired De Jesus, Jeff Bond, Zac Olds</footer>;
+};
 
-export default Footer
+export default Footer;
