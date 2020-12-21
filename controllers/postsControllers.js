@@ -15,7 +15,7 @@ const getPosts = async (req, res) => {
 const getPost = async (req, res) => {
     try {
         const { id } = req.params
-        const product = await Post.findById(id)
+        const post = await Post.findById(id)
         if (post) {
             return res.json(post)
         }
