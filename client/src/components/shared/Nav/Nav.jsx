@@ -11,7 +11,7 @@ const Nav = () => {
       </div>
       <div className="nav-links">
         <Link to="/posts">
-          <p>Post</p>
+          <p>Posts</p>
         </Link>
         <Link to="/add-post">
           <p>Create Post</p>
