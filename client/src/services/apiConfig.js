@@ -14,7 +14,7 @@ const apiUrls = {
 
 if (window.location.hostname === "localhost") {
   // if browser address starts with local host, the environment is in development
-  apiUrl = apiUrls.development;
+  apiUrl = apiUrls.production;
 } else {
   // else the environment is production, use deployed API link
   apiUrl = apiUrls.production;

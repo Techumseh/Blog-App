@@ -1,0 +1,13 @@
+.post-card {
+  margin: 10px;
+}
+
+.post-card-image {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #344664;
+}
+
+.card-name {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
