@@ -2,12 +2,13 @@ import React, {useState, useEffect} from "react";
 import "./PostDetail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import {getPost, deletePost} from "../../services/posts";
-import {useParams, Link} from "react-router-dom";
+import {useParams, Link, Redirect} from "react-router-dom";
 import "./PostDetail.css";
 
 const PostDetail = () => {
   const [post, setPost] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const [isCreate, setCreate] = useState(false);
   const {id} = useParams();
 
   useEffect(() => {
@@ -21,6 +22,19 @@ const PostDetail = () => {
   if (!isLoaded) {
     return <h1>Loading ...</h1>;
   }
+
+  // HANDLE DELETE
+  const handleDelete = (e) => {
+    e.preventDefault();
+    deletePost(id);
+    const toggle = true;
+    setCreate(toggle);
+  };
+
+  if (isCreate) {
+    return <Redirect to={`/posts`} />;
+  }
+
   return (
     <Layout>
       <div className="post-detail-container">
@@ -38,14 +52,11 @@ const PostDetail = () => {
           </div>
           <div className="content">{post.content}</div>
           <div className="buttons">
-            <button
-              className="delete-button"
-              onClick={() => deletePost(post.id)}
-            >
+            <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>
             <button className="edit-button">
-              <Link className="edit-link" to={`/posts/${post.id}/edit`}>
+              <Link className="edit-link" to={`/posts/${id}/edit`}>
                 Edit
               </Link>
             </button>
