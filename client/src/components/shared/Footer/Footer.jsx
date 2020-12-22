@@ -1,8 +1,14 @@
 import React from "react";
-// import './Footer.css'
+import "./Footer.css";
 
 const Footer = () => {
-  return <footer>Daysired De Jesus, Jeff Bond, Zac Olds</footer>;
+  return (
+    <footer>
+      <div className="footer-container">
+        <p> &#169; Daysired De Jesus, Jeff Bond, Zac Olds</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

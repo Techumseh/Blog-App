@@ -1,10 +1,12 @@
-import Posts from "../Posts/Posts";
+import PostCards from "../../components/PostCards/PostCards";
 import Layout from "../../components/shared/Layout/Layout";
 
 const Home = () => {
   return (
     <Layout>
-      <div>Hello</div>
+      <div>
+        <PostCards />
+      </div>
     </Layout>
   );
 };
