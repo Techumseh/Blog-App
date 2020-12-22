@@ -38,11 +38,11 @@ const createPost = async (req, res) => {
 
 const updatePost = async (req, res) => {
     const { id } = req.params
-    await Post.findByIdAndUpdate(id, req.body, { new: true }, (error, product) => {
+    await Post.findByIdAndUpdate(id, req.body, { new: true }, (error, post) => {
         if (error) {
             return res.status(500).json({ error: error.message })
         }
-        if (!product) {
+        if (!post) {
             return res.status(404).json({ message: 'Product not found!' })
         }
         res.status(200).json(post)

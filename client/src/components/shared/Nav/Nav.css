@@ -1,0 +1,27 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+  margin-bottom: 35px;
+  height: 20vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+.nav-links p {
+  padding: 10px;
+}
+
+.nav-container h1 {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
