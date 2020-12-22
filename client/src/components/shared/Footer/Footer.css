@@ -1,0 +1,8 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  background-color: hotpink;
+  height: 20vh;
+}
