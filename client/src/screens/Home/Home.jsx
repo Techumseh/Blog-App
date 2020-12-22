@@ -1,10 +1,11 @@
 import PostCards from "../../components/PostCards/PostCards";
 import Layout from "../../components/shared/Layout/Layout";
+import "./Home.css";
 
 const Home = () => {
   return (
     <Layout>
-      <div>
+      <div className="home-container">
         <PostCards />
       </div>
     </Layout>
